@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .about-title {
+    @apply text-center text-2xl font-bold mb-6 md:text-left;
+  }
+  .project-icon {
+    @apply hover:-translate-y-1 transition-transform cursor-pointer;
+  }
+  .footer-icon {
+    @apply hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100;
+  }
+  .hero {
+    @apply flex flex-col text-center items-center justify-center my-10 py-16 sm:py-32 md:flex-row md:space-x-4 md:text-left md:py-52;
+  }
+}
